@@ -256,7 +256,7 @@ class DataOps():
 
             data_dict = self._breakDownData()
 
-            print("="*85)
+            print("="*75)
             print("     {}      -------     {}      -------     {}      ".format("Tag", "Wert", "Grund"))
             for i in range(len(data_dict["date"])):
                 print('%*s   %*s    %*s ' % (7, data_dict["date"][i], 15, data_dict["price"][i], 20, data_dict["reason"][i]))

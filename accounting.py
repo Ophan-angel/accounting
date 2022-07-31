@@ -26,9 +26,9 @@ class Book():
         date = self.__dataops._getDate(type="Long") 
             
         # greeting the user 
-        print("="*85)
+        print("="*75)
         print("<< [+] Hallo, {}!".format(user))
-        print("="*85)
+        print("="*75)
         print("<< [Info] Aktuelles Datum : {}".format(date))
         print("<< [Info] Aktueller Stand : {} Euro\n".format(self.__dataops._showStatus()))
         self.__logger._writeData(method_name, "ending")
@@ -44,6 +44,24 @@ class Book():
             self.__logger._writeData("<< [!] Exception while trying to clear the screen :: {}".format(e))
             self.__logger._writeData(method_name, "ending")
             return False
+
+    def _printHelp(self):
+        print("="*75)
+        print("<< [CMD] 'eingabe -p {irgendein Preis} -g {irgendeinen guten Grund}'")
+        print("   --> Eingabe eines neuen wertes mit Ausgabe und Grund ")
+        print("   --> -p = Preis und -g = Grund ")
+        print("   Beispiel: 'eingabe -p 200 -g tanken ")
+        print("<< [CMD] 'aktuell' ")
+        print("   --> Aktualisierung vom momentanen Stand")
+        print("<< [CMD] 'zeigeMonat' ")
+        print("   --> Zeigt Ausgaben aus diesem Monat in einer Liste")
+        print("<< [CMD] 'leereMonat' ")
+        print("   --> Leeren des momentanen Monats")
+        print("<< [CMD] 'setzeZiel -z {irgendein Wert}")
+        print("   --> Setze Ziel für einen Monat ") 
+        print("   --> Die Ausgaben werden von ihm abgezogen")
+        print("   Beispiel: 'setzeZiel -z 600 '")
+        print("="*75)
 
     def _startApplication(self):
         user = os.getlogin() 
@@ -74,6 +92,8 @@ class Book():
                 elif user_input == "aktuell":
                     self._clearScreen() 
                     self._greeting()
+                elif user_input == "hilfe":
+                    self._printHelp()
                 else:
                     bol = self.__dataops._searchData(user_input)
             
