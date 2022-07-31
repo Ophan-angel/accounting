@@ -59,3 +59,4 @@ class FileOps():
         except Exception as e:
             os.chdir(self.__main_link)
             self.__logger._writeData("<< [!] Exception while trying to read the requested file '{}' :: {}".format(file_name, e))
+            return None 

@@ -53,11 +53,19 @@ class DataOps():
     def _deleteMonth(self):
         method_name = "_deleteMonth()"
         try:
-            self.__logger._writeData(method_name, "starting")
+            temp_link = os.getcwd() 
+            self.__logger._writeData(method_name, "starting")       
+            link = "Data"
+            try:
+                os.chdir(link)
+            except Exception as e:
+                self.__logger._writeData("<< [!] Exception while trying to change the dir to delete the current month :: {}".format(e))
 
             file_name = self._createFileName() 
             with open(file_name, "w") as file:
                 pass
+            
+            os.chdir(temp_link)
 
             self.__logger._writeData("  [*] Successfully deleted the current month... ")
 
@@ -86,6 +94,32 @@ class DataOps():
             self.__logger._writeData(method_name, "ending")
             return False
 
+
+    def _setTargetValue(self, value):
+        method_name = "_setTargetValue()"
+        try:
+            self.__logger._writeData(method_name, "starting") 
+
+            temp_link = os.getcwd() 
+            link = "Data"
+            os.chdir(link)
+            target_file = "target.sav"
+            
+            try:
+                with open(target_file, "w") as file:
+                    file.write(str(value))
+            except Exception as e:
+                self.__logger._writeData("<< [!] Exception while trying to write to the file '{}' :: {}".format(target_file, e))
+
+            os.chdir(temp_link)
+            return True
+        except Exception as e:
+            self.__logger._writeData("<< [!] Exception while trying to set the target value :: {}".format(e))
+            self.__logger._writeData(method_name, "ending")
+            os.chdir(temp_link)
+            return False
+
+
     def _searchData(self, data):
         method_name = "_searchData()"
         try:
@@ -98,6 +132,8 @@ class DataOps():
             reason = "" 
             mode   = "" 
 
+            target = None 
+
             #iterate through the list and search for key-words 
             for i in range(len(list)):
                 #search for the explicit key word 'eingabe'
@@ -108,8 +144,19 @@ class DataOps():
                             price = list[j+1]
                         elif list[j] == "-g":
                             reason = list[j+1]
+                elif list[i] == "setzeZiel":
+                    for j in range(len(list)):
+                        if list[j] == "-z":
+                            target = list[j+1] 
+                        else:
+                            pass
                 else:
                     pass
+            
+            if target != None:
+                self._setTargetValue(target)
+            else:
+                pass
 
             # check for a given mode and look if price and reason are given... 
             if mode != None:
@@ -135,6 +182,10 @@ class DataOps():
         try:
             self.__logger._writeData(method_name, "starting")
             data = self.__fileops._readFile(self._createFileName())
+            if data == None:
+                return data
+            else:
+                pass
 
             dates = []
             prices = [] 
@@ -166,13 +217,33 @@ class DataOps():
         try:
             self.__logger._writeData(method_name, "starting")
 
-            data = self._breakDownData() 
-            counter = 0
-            for i in range(len(data["price"])):
-                counter += float(data["price"][i]) 
+            target_file = "target.sav"
+
+            target_val = None
+            #look for the target value
+            data = self.__fileops._readFile(target_file)
+            if data != None:
+                target_val = float(data[0])
+            else:
+                #no target value was found
+                pass
             
-            self.__logger._writeData(method_name, "ending")
-            return counter
+            data = self._breakDownData() 
+            if data == None:
+                return 0
+            else:
+                pass
+            if target_val == None or target_val == 0.0:
+                counter = 0
+                for i in range(len(data["price"])):
+                    counter += float(data["price"][i]) 
+                self.__logger._writeData(method_name, "ending")
+                return counter
+            else:
+                for i in range(len(data["price"])):
+                    target_val -= float(data["price"][i]) 
+                self.__logger._writeData(method_name, "ending")
+                return target_val
         except Exception as e:
             self.__logger._writeData("<< [!] Exception while trying to show the current status :: {}".format(e))
             self.__logger._writeData(method_name, "ending")
@@ -188,8 +259,7 @@ class DataOps():
             print("="*85)
             print("     {}      -------     {}      -------     {}      ".format("Tag", "Wert", "Grund"))
             for i in range(len(data_dict["date"])):
-                print("{}               {}            {}".format(data_dict["date"][i], data_dict["price"][i], data_dict["reason"][i]))
-            
+                print('%*s   %*s    %*s ' % (7, data_dict["date"][i], 15, data_dict["price"][i], 20, data_dict["reason"][i]))
             self.__logger._writeData(method_name, "ending")
         except Exception as e: 
             self.__logger._writeData("<< [!] Exception while trying to print the values of the month :: {}".format(e))
