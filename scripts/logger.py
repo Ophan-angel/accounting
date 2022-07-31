@@ -3,6 +3,8 @@ import os
 
 class Logger():
     def __init__(self):
+        link ="C:\\Users\\{}\\Documents\\Book\\".format(os.getlogin())
+        os.chdir(link)
         self.__log_file = "log.txt"
         
     def _writeData(self, data,type=None, link=None):

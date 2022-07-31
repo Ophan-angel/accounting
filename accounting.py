@@ -19,6 +19,7 @@ class Book():
 
     def _greeting(self):
 
+
         method_name  = "_greeting()"
         self.__logger._writeData(method_name, "starting")
         user = os.getlogin() 
@@ -45,6 +46,10 @@ class Book():
             return False
 
     def _startApplication(self):
+        user = os.getlogin() 
+        link = "C:\\Users\\{}\\Documents\Book\\".format(user)
+        os.chdir(link) 
+        
         method_name = "_startApplication()"
         try:
             self.__logger._writeData(method_name, "starting")

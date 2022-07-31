@@ -13,7 +13,7 @@ class Create():
             current_work = current_link + "\\accounting.py"
             with open(self.__file_name, "w") as file: 
                 file.write("@Echo off\n")
-                file.write("title Accoutning\n")
+                file.write("title Accounting\n")
                 file.write("color 0a\n")
                 file.write("python {}\n".format(current_work))
                 file.write("pause")
