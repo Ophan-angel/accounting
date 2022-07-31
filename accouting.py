@@ -13,6 +13,7 @@ class Book():
         self.__dataops = DataOps() 
 
         self.__logger._writeData("\n\n<< [+] Starting of main application on {}".format(self.__dataops._getDate()))
+        self._clearScreen() 
         
         self._startApplication()
 

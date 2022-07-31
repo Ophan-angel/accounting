@@ -110,7 +110,6 @@ class DataOps():
                             reason = list[j+1]
                 else:
                     pass
-            
 
             # check for a given mode and look if price and reason are given... 
             if mode != None:
@@ -189,7 +188,7 @@ class DataOps():
             print("="*85)
             print("     {}      -------     {}      -------     {}      ".format("Tag", "Wert", "Grund"))
             for i in range(len(data_dict["date"])):
-                print("{} {} {}               {}".format(data_dict["date"][i], data_dict["price"][i], data_dict["reason"][i]))
+                print("{}               {}            {}".format(data_dict["date"][i], data_dict["price"][i], data_dict["reason"][i]))
             
             self.__logger._writeData(method_name, "ending")
         except Exception as e: 

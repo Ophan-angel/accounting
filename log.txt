@@ -1,0 +1,230 @@
+<< [!] Ending '_getUserInput()'-method 
+  [*] User requested shutdown ... 
+<< [!] Ending '_startApplication()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+
+
+<< [+] Starting of main application on 2022-07-31
+<< [+] Starting '_clearScreen()'-method 
+<< [!] Ending '_clearScreen()'-method 
+<< [+] Starting '_startApplication()'-method 
+<< [+] Starting '_greeting()'-method 
+<< [+] Starting '_getDate()'-method 
+<< [+] Starting '_showStatus()'-method 
+<< [+] Starting '_breakDownData()'-method 
+<< [+] Starting '_createFileName()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+  [*] Extracted file name :: 07-data.sav
+<< [!] Ending '_createFileName()'-method 
+<< [+] Starting '_readFile()'-method 
+<< [!] Ending '_readFile()'-method 
+<< [!] Ending '_breakDownData()'-method 
+<< [!] Ending '_showStatus()'-method 
+<< [!] Ending '_greeting()'-method 
+<< [+] Starting '_getUserInput()'-method 
+<< [!] Ending '_getUserInput()'-method 
+<< [+] Starting '_searchData()'-method 
+<< [+] Starting '_createFileName()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+  [*] Extracted file name :: 07-data.sav
+<< [!] Ending '_createFileName()'-method 
+  << [*] Writing user data into file : 07-data.sav
+<< [+] Starting '_getDate()'-method 
+<< [+] Starting '_writeToFile()'-method 
+      << [+] Successfully wrote the requested data to the log file... 
+<< [!] Ending '_writeToFile()'-method 
+<< [!] Ending '_searchData()'-method 
+<< [+] Starting '_getUserInput()'-method 
+<< [!] Ending '_getUserInput()'-method 
+<< [+] Starting '_printMonth()'-method 
+<< [+] Starting '_breakDownData()'-method 
+<< [+] Starting '_createFileName()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+  [*] Extracted file name :: 07-data.sav
+<< [!] Ending '_createFileName()'-method 
+<< [+] Starting '_readFile()'-method 
+<< [!] Ending '_readFile()'-method 
+<< [!] Ending '_breakDownData()'-method 
+<< [!] Exception while trying to print the values of the month :: Replacement index 3 out of range for positional args tuple
+<< [!] Ending '_printMonth()'-method 
+<< [+] Starting '_getUserInput()'-method 
+<< [!] Ending '_getUserInput()'-method 
+  [*] User requested shutdown ... 
+<< [!] Ending '_startApplication()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+
+
+<< [+] Starting of main application on 2022-07-31
+<< [+] Starting '_clearScreen()'-method 
+<< [!] Ending '_clearScreen()'-method 
+<< [+] Starting '_startApplication()'-method 
+<< [+] Starting '_greeting()'-method 
+<< [+] Starting '_getDate()'-method 
+<< [+] Starting '_showStatus()'-method 
+<< [+] Starting '_breakDownData()'-method 
+<< [+] Starting '_createFileName()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+  [*] Extracted file name :: 07-data.sav
+<< [!] Ending '_createFileName()'-method 
+<< [+] Starting '_readFile()'-method 
+<< [!] Ending '_readFile()'-method 
+<< [!] Ending '_breakDownData()'-method 
+<< [!] Ending '_showStatus()'-method 
+<< [!] Ending '_greeting()'-method 
+<< [+] Starting '_getUserInput()'-method 
+<< [!] Ending '_getUserInput()'-method 
+<< [+] Starting '_printMonth()'-method 
+<< [+] Starting '_breakDownData()'-method 
+<< [+] Starting '_createFileName()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+  [*] Extracted file name :: 07-data.sav
+<< [!] Ending '_createFileName()'-method 
+<< [+] Starting '_readFile()'-method 
+<< [!] Ending '_readFile()'-method 
+<< [!] Ending '_breakDownData()'-method 
+<< [!] Exception while trying to print the values of the month :: Replacement index 3 out of range for positional args tuple
+<< [!] Ending '_printMonth()'-method 
+<< [+] Starting '_getUserInput()'-method 
+<< [!] Ending '_getUserInput()'-method 
+  [*] User requested shutdown ... 
+<< [!] Ending '_startApplication()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+
+
+<< [+] Starting of main application on 2022-07-31
+<< [+] Starting '_clearScreen()'-method 
+<< [!] Ending '_clearScreen()'-method 
+<< [+] Starting '_startApplication()'-method 
+<< [+] Starting '_greeting()'-method 
+<< [+] Starting '_getDate()'-method 
+<< [+] Starting '_showStatus()'-method 
+<< [+] Starting '_breakDownData()'-method 
+<< [+] Starting '_createFileName()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+  [*] Extracted file name :: 07-data.sav
+<< [!] Ending '_createFileName()'-method 
+<< [+] Starting '_readFile()'-method 
+<< [!] Ending '_readFile()'-method 
+<< [!] Ending '_breakDownData()'-method 
+<< [!] Ending '_showStatus()'-method 
+<< [!] Ending '_greeting()'-method 
+<< [+] Starting '_getUserInput()'-method 
+<< [!] Ending '_getUserInput()'-method 
+<< [+] Starting '_printMonth()'-method 
+<< [+] Starting '_breakDownData()'-method 
+<< [+] Starting '_createFileName()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+  [*] Extracted file name :: 07-data.sav
+<< [!] Ending '_createFileName()'-method 
+<< [+] Starting '_readFile()'-method 
+<< [!] Ending '_readFile()'-method 
+<< [!] Ending '_breakDownData()'-method 
+<< [!] Exception while trying to print the values of the month :: list index out of range
+<< [!] Ending '_printMonth()'-method 
+<< [+] Starting '_getUserInput()'-method 
+<< [!] Ending '_getUserInput()'-method 
+  [*] User requested shutdown ... 
+<< [!] Ending '_startApplication()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+
+
+<< [+] Starting of main application on 2022-07-31
+<< [+] Starting '_clearScreen()'-method 
+<< [!] Ending '_clearScreen()'-method 
+<< [+] Starting '_startApplication()'-method 
+<< [+] Starting '_greeting()'-method 
+<< [+] Starting '_getDate()'-method 
+<< [+] Starting '_showStatus()'-method 
+<< [+] Starting '_breakDownData()'-method 
+<< [+] Starting '_createFileName()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+  [*] Extracted file name :: 07-data.sav
+<< [!] Ending '_createFileName()'-method 
+<< [+] Starting '_readFile()'-method 
+<< [!] Ending '_readFile()'-method 
+<< [!] Ending '_breakDownData()'-method 
+<< [!] Ending '_showStatus()'-method 
+<< [!] Ending '_greeting()'-method 
+<< [+] Starting '_getUserInput()'-method 
+<< [!] Ending '_getUserInput()'-method 
+<< [+] Starting '_printMonth()'-method 
+<< [+] Starting '_breakDownData()'-method 
+<< [+] Starting '_createFileName()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+  [*] Extracted file name :: 07-data.sav
+<< [!] Ending '_createFileName()'-method 
+<< [+] Starting '_readFile()'-method 
+<< [!] Ending '_readFile()'-method 
+<< [!] Ending '_breakDownData()'-method 
+<< [!] Exception while trying to print the values of the month :: list index out of range
+<< [!] Ending '_printMonth()'-method 
+<< [+] Starting '_getUserInput()'-method 
+<< [!] Ending '_getUserInput()'-method 
+  [*] User requested shutdown ... 
+<< [!] Ending '_startApplication()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+
+
+<< [+] Starting of main application on 2022-07-31
+<< [+] Starting '_clearScreen()'-method 
+<< [!] Ending '_clearScreen()'-method 
+<< [+] Starting '_startApplication()'-method 
+<< [+] Starting '_greeting()'-method 
+<< [+] Starting '_getDate()'-method 
+<< [+] Starting '_showStatus()'-method 
+<< [+] Starting '_breakDownData()'-method 
+<< [+] Starting '_createFileName()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+  [*] Extracted file name :: 07-data.sav
+<< [!] Ending '_createFileName()'-method 
+<< [+] Starting '_readFile()'-method 
+<< [!] Ending '_readFile()'-method 
+<< [!] Ending '_breakDownData()'-method 
+<< [!] Ending '_showStatus()'-method 
+<< [!] Ending '_greeting()'-method 
+<< [+] Starting '_getUserInput()'-method 
+<< [!] Ending '_getUserInput()'-method 
+<< [+] Starting '_printMonth()'-method 
+<< [+] Starting '_breakDownData()'-method 
+<< [+] Starting '_createFileName()'-method 
+<< [+] Starting '_getDate()'-method 
+  [*] Current date :: 2022-07-31
+<< [!] Ending '_getDate()'-method 
+  [*] Extracted file name :: 07-data.sav
+<< [!] Ending '_createFileName()'-method 
+<< [+] Starting '_readFile()'-method 
+<< [!] Ending '_readFile()'-method 
+<< [!] Ending '_breakDownData()'-method 
+<< [!] Exception while trying to print the values of the month :: list index out of range
+<< [!] Ending '_printMonth()'-method 
+<< [+] Starting '_getUserInput()'-method 
